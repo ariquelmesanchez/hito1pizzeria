@@ -1,5 +1,7 @@
-.card{
-    display: grid;
-    grid-template-columns: repeat(autofill, minmax(280px, 1fr));
-    grid-gap: 15px;
-  }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 5rem; 
+  padding: 5rem; 
+  align-content: space-between;
+}
