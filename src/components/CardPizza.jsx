@@ -1,6 +1,5 @@
-
 import React from 'react';
-import './CardPizza.css'
+import './CardPizza.css';
 
 export const CardPizza = ({ nombre, price, ingredients, img }) => {
   return (
@@ -10,6 +9,10 @@ export const CardPizza = ({ nombre, price, ingredients, img }) => {
         <h5 className="card-title">{nombre}</h5>
         <p className="card-text">Price: ${price}</p>
         <p className="card-text">Ingredients: {ingredients.join(', ')}</p>
+        <div className="button-group">
+          <button className="btn btn-primary">Ver Más</button>
+          <button className="btn btn-secondary">Add to Cart</button>
+        </div>
       </div>
     </div>
   );
